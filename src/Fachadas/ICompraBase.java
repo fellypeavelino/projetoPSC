@@ -1,5 +1,7 @@
 package Fachadas;
 
-public interface ICompraBase {
+import Classes.Compra;
+
+public interface ICompraBase extends IBase<Compra, Integer>{
 
 }

@@ -1,5 +1,7 @@
 package Fachadas;
 
-public interface IClienteBase {
+import Classes.Cliente;
+
+public interface IClienteBase extends IBase<Cliente, Integer>{
 
 }

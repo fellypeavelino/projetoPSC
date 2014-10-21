@@ -1,5 +1,8 @@
 package Base;
 
-public class ProdutoBase {
+import Classes.Produto;
+import Fachadas.IProdutoBase;
+
+public class ProdutoBase extends Base<Produto, Integer> implements IProdutoBase{
 
 }

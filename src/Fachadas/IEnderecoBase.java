@@ -1,9 +1,7 @@
 package Fachadas;
 
-public class IEnderecoBase {
+import Classes.Endereco;
 
-	public IEnderecoBase() {
-		// TODO Auto-generated constructor stub
-	}
+public interface IEnderecoBase extends IBase<Endereco, Integer>{
 
 }

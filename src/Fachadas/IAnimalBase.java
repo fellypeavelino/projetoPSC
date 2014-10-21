@@ -1,5 +1,7 @@
 package Fachadas;
 
-public interface IAnimalBase {
+import Classes.Animal;
+
+public interface IAnimalBase extends IBase<Animal, Integer>{
 
 }

@@ -1,11 +1,17 @@
 package Classes;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class PessoaFisica extends Pessoa{
 
 	public PessoaFisica() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	@Id
+	@GeneratedValue
 	private Integer codigo;
 	private String cpf;
 	private String nome;

@@ -1,5 +1,8 @@
 package Base;
 
-public class TipoBase {
+import Classes.Tipo;
+import Fachadas.ITipoBase;
+
+public class TipoBase extends Base<Tipo, Integer> implements ITipoBase{
 
 }
