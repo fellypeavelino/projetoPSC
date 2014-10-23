@@ -1,11 +1,17 @@
 package Classes;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Tipo {
 
 	public Tipo() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	@Id
+	@GeneratedValue
     private Integer codigo;
     private String nome;
 	public Integer getCodigo() {

@@ -3,12 +3,17 @@ package Classes;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity
 public class Estoque {
 
 	public Estoque() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	@Id
+	@GeneratedValue
 	private Integer codigo;
 	private Date data_entrada;
 	private Date data_saida;

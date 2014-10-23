@@ -1,13 +1,22 @@
 package Classes;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Solicitacao {
 
 	public Solicitacao() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	@Id
+	@GeneratedValue
 	private Integer codigo;
+	@ManyToOne
 	private Cliente cliente = new Cliente();
+	@ManyToOne
 	private Produto produto = new Produto();
 	private String descricao;
 	public Integer getCodigo() {

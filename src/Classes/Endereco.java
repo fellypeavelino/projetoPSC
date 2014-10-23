@@ -1,11 +1,18 @@
 package Classes;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Endereco {
 
 	public Endereco() {
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	@Id
+	@GeneratedValue
 	private Integer codigo;
 	private String logradouro;
 	private String bairro;

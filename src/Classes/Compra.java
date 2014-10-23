@@ -2,14 +2,22 @@ package Classes;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+@Entity
 public class Compra {
 
 	public Compra() {
 		// TODO Auto-generated constructor stub
 	}
-	
+	@Id
+	@GeneratedValue
 	private Integer codigo;
+	@ManyToOne
 	private Cliente cliente = new Cliente();
+	@ManyToOne
 	private Produto produto = new Produto();
 	private double valor;
 	private Date data;
