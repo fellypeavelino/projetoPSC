@@ -7,7 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import Fachadas.IBase;
+import Interfaces.IBase;
 
 public abstract class Base<T, I extends Serializable> implements IBase<T, I> {
 		public Base(){

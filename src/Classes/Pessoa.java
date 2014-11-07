@@ -15,9 +15,9 @@ public abstract class Pessoa {
 	private String mail;
 	private String endereco;
     private String senha;
-    private String estado, cep, municipio, logradouro, complemento;
-    private int numero;
-    
+    //private String estado, cep, municipio, logradouro, complemento;
+    //private int numero;
+    private String nome;
 	public Integer getCodigo() {
 		return codigo;
 	}
@@ -54,41 +54,11 @@ public abstract class Pessoa {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public String getEstado() {
-		return estado;
+	public String getNome() {
+		return nome;
 	}
-	public void setEstado(String estado) {
-		this.estado = estado;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public String getCep() {
-		return cep;
-	}
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
-	public String getMunicipio() {
-		return municipio;
-	}
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
-	}
-	public String getLogradouro() {
-		return logradouro;
-	}
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
-	}
-	public String getComplemento() {
-		return complemento;
-	}
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
-	public int getNumero() {
-		return numero;
-	}
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-	
+   
 }

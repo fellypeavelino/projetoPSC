@@ -1,7 +1,7 @@
 package Base;
 
 import Classes.Solicitacao;
-import Fachadas.ISolicitacaoBase;
+import Interfaces.ISolicitacaoBase;
 
 public class SolicitacaoBase extends Base<Solicitacao, Integer> implements ISolicitacaoBase{
 

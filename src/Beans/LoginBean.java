@@ -3,7 +3,7 @@ package Beans;
 import javax.faces.bean.ManagedBean;
 
 import Classes.Cliente;
-import Fachadas.ILoginBean;
+import Interfaces.ILoginBean;
 
 @ManagedBean
 public class LoginBean implements ILoginBean{
@@ -22,7 +22,6 @@ public class LoginBean implements ILoginBean{
 	}
 
 	public String toMenu(){
-		//System.out.println("teste");
 		return "menu.xhtml?faces-redirect=true";
 	}
 	

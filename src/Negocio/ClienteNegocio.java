@@ -2,7 +2,7 @@ package Negocio;
 
 import Base.ClienteBase;
 import Classes.Cliente;
-import Fachadas.IClienteBase;
+import Interfaces.IClienteBase;
 
 public class ClienteNegocio {
 	

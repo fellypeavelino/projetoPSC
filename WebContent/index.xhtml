@@ -14,15 +14,15 @@
 		<table>
 			<tr>
 				<td>Usuario:</td>
-				<td><h:inputText value="#{loginBean}" /></td>
+				<td><h:inputText value="#{loginBean.cliente.mail}" /></td>
 			</tr>
 			<tr>
 				<td>Senha:</td>
-				<td><h:inputSecret value="#{loginBean}" /> </td>
+				<td><h:inputSecret value="#{loginBean.cliente.senha}" /> </td>
 			</tr>
 			<tr>
 				<td>
-					<h:commandButton value="Salvar" action="#{loginBean}"></h:commandButton>
+					<h:commandButton value="Salvar" action="#{loginBean.toMenu}"></h:commandButton>
 				</td>
 			</tr>
 		</table>
