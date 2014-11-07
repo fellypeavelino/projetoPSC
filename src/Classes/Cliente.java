@@ -3,9 +3,10 @@ package Classes;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
-public class Cliente extends Pessoa{
+public class Cliente {
 
 	public Cliente() {
 		// TODO Auto-generated constructor stub
@@ -13,7 +14,17 @@ public class Cliente extends Pessoa{
 	@Id
 	@GeneratedValue
 	private Integer codigo;
+	@OneToOne
+	private Pessoa pessoa;
 	
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+
 	public Integer getCodigo() {
 		return codigo;
 	}

@@ -1,6 +1,7 @@
 package Classes;
 
 import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToOne;
 
 @MappedSuperclass
 public abstract class Pessoa {
@@ -13,7 +14,8 @@ public abstract class Pessoa {
 	private String telefone;
 	private String celular;
 	private String mail;
-	private String endereco;
+	@OneToOne
+	private Endereco endereco;
     private String senha;
     //private String estado, cep, municipio, logradouro, complemento;
     //private int numero;
@@ -42,10 +44,10 @@ public abstract class Pessoa {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 	public String getSenha() {
